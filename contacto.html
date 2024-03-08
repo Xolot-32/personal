@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Contacto - Xolot Inc.</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <div class="caja">
+                <h1><img id="logo" src="imagenes/all.png" alt="Xolot Inc."></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Información</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+            
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <main>
+
+            <form>
+                <label for="nombreyapellido"> Nombre y apellido</label>
+                <input type="text" id="nombreyapellido" class="input-padron" required>
+
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" class="input-padron" required placeholder="email@dominio.com">
+                
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX)XXXX XXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="70" rows="10" class="input-padron" required></textarea >
+
+
+            <fieldset>
+                <legend>¿Como le gustaria que contactado?</legend>
+
+               <label for="radio-email"> <input  id="radio-email" name="contacto" value="email" type="radio">E-mail</label>
+              
+
+               <label for="radio-telefono"> <input  id="radio-telefono" name="contacto" value="Telefono" type="radio">Telefono</label>
+              
+
+               <label for="radio-whatsapp">  <input  id="radio-whatsapp" name="contacto" value="WhatsApp" type="radio" checked>WhatsApp</label>
+             
+            </fieldset>
+           
+            <fieldset>
+                <legend>¿En que horario quiere ser atendido?</legend>
+                <select>
+
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+
+
+                </select>
+
+            </fieldset>
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de esta aplicacion?</label>
+
+                <input type="submit" value="Enviar" class="enviar">
+
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+              <tbody>
+
+                <tr>
+                    <td>Lunes</td>
+                    <td>08h- 20h</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>08h- 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h- 20h</td>
+                </tr>
+
+              </tbody>
+
+            </table>
+
+        </main>
+
+        <footer>
+            <img id="pie" src="imagenes/xolot_logo_5s-ezgif.com-speed.gif" alt="Xolot Inc.">
+            <p class="copy"> &copy; Copyright Xolot Inc. 2024</p>
+
+
+
+        </footer>
+
+
+
+    </body>
+
+
+
+</html>
